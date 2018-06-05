@@ -4,15 +4,29 @@
 
 */
 
-public class Checker extends Point implements Movement{
+public class Checker {
 
 	private int row;
 	private int col;
 	private char symbol;
 
 	public Checker(char symbol, int row, int col) {
-		super(row, col);
+		this.row = row;
+		this.col = col;
 		this.symbol = symbol;
+	}
+
+	public void position(int x, int y) {
+		this.row = x;
+		this.col = y;
+	}
+
+	public int row() {
+		return row;
+	}
+
+	public int col() {
+		return col;
 	}
 
 	public char symbol() {

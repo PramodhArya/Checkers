@@ -96,7 +96,6 @@ public class CheckersDriver {
 
 	public static void getInput() {
 		try {
-			int a = 0;
 			System.out.println("Select a piece to move: ");
 			input = in.nextLine();
 			try {
